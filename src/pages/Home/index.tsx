@@ -1,17 +1,14 @@
-import { Valores } from '../../components/Valores';
-import { Filosofia } from '../../components/Filosofia';
 import { Header } from '../../components/Header';
 import { Hero } from '../../components/Hero';
-import { Footer } from '../../components/Footer';
+
+import * as S from './styled';
 
 export const Home = () => {
   return (
-    <div>
+    <S.Container>
       <Header />
       <Hero />
-      <Filosofia />
-      <Valores />
-      <Footer />
-    </div>
+      <S.Recorte></S.Recorte>
+    </S.Container>
   );
 };

@@ -16,7 +16,7 @@ export const QuemSomos = () => {
           de demonstrar nossos valores fundamentais, nossa missão e visão.
           <br />
           Estamos comprometidos em inovar em cada apresentação, sempre buscando
-          transformar o impossível em possível.
+          transformar o impossível em realidade.
           <br />
           Nossa dedicação e criatividade nos impulsionam a superar limites e a
           alcançar resultados excepcionais, mostrando que a verdadeira força

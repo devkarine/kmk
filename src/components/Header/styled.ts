@@ -8,6 +8,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  border-color: transparent;
 `;
 
 export const Logo = styled.div`
@@ -42,7 +43,7 @@ export const Nav = styled.nav`
         padding: 5px;
 
         &:hover {
-          border: 2px solid ${({ theme }) => theme.colors.light};
+          border: 2px solid #991b1b;
           border-radius: 8px;
         }
       }

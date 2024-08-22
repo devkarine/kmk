@@ -15,7 +15,7 @@ export const Header = () => {
             <Link to="/home">Home</Link>
           </li>
           <li>
-            <a href="#filosofia">Filosofia</a>
+            <Link to="/filosofia">Filosofia</Link>
           </li>
 
           <li>

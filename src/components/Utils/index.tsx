@@ -1,24 +1,27 @@
 import { useState, useEffect } from 'react';
 
-export const useTypewriter = (text: string, speed: number = 50): string => {
-  const [displayText, setDisplayText] = useState('');
+export const useTypewriter = (text: string, speed: number) => {
+  const [displayedText, setDisplayedText] = useState('');
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    let i = 0;
+    if (index < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText(prev => prev + text.charAt(index));
+        setIndex(index + 1);
+      }, speed);
 
-    const typingInterval = setInterval(() => {
-      setDisplayText(() => {
-        const newText = text.slice(0, i + 1);
-        i++;
-        if (i >= text.length) {
-          clearInterval(typingInterval);
-        }
-        return newText;
-      });
-    }, speed);
+      return () => clearTimeout(timeout);
+    } else {
+      // Reinicia a animação
+      const resetTimeout = setTimeout(() => {
+        setDisplayedText('');
+        setIndex(0);
+      }, speed);
 
-    return () => clearInterval(typingInterval);
-  }, [text, speed]);
+      return () => clearTimeout(resetTimeout);
+    }
+  }, [index, text, speed]);
 
-  return displayText;
+  return displayedText;
 };

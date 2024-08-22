@@ -5,7 +5,8 @@ const hexagons = [
   { title: 'RESPEITO', phrase: 'Foco nas pessoas' },
   { title: 'CONFIANÇA', phrase: 'Ética e honestidade' },
   { title: 'EMPREENDEDORISMO', phrase: 'Coragem e inovação' },
-  { title: 'UNIÃO', phrase: 'Resultados extraordinários' }
+  { title: 'UNIÃO', phrase: 'Resultados extraordinários' },
+  { title: 'COMPROMETIMENTO', phrase: 'Exceder expectativas' }
 ];
 
 export const Valores = () => {

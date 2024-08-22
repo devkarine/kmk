@@ -1,26 +1,39 @@
 import styled from 'styled-components';
 export const Title = styled.h2`
   font-size: ${({ theme }) => theme.fonts.size.header.small};
-  padding: 100px 0 50px 0;
+  padding: 50px 0;
   text-align: center;
   background-color: ${({ theme }) => theme.colors.secondary};
 `;
+
 export const Container = styled.div`
   display: flex;
-  text-align: center;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  padding: 20px 20px 70px 20px;
-  background-color: ${({ theme }) => theme.colors.secondary};
+  gap: 5px;
 `;
 
 export const HexagonWrapper = styled.div<{ alternate?: boolean }>`
   width: 250px;
   height: 250px;
   position: relative;
-  margin: 10px;
+  margin: 2px;
   transform: ${({ alternate }) =>
     alternate ? 'translateY(-30px)' : 'translateY(30px)'};
+
+  @media (max-width: 768px) {
+    margin: 15px;
+    transform: translateY(
+      0
+    ); // Remova o translateY em telas menores para alinhar os hexágonos
+  }
+
+  @media (max-width: 480px) {
+    width: 200px;
+    height: 200px;
+    margin: 20px; // Aumenta ainda mais o espaçamento em telas pequenas
+  }
 `;
 
 export const Hexagon = styled.div<{ isFlipped: boolean }>`

@@ -5,21 +5,24 @@ import BlogPost from './components/BlogPost';
 import BlogList from './components/BlogList';
 import { Hero } from '../../components/Hero';
 import { Footer } from '../../components/Footer';
+import * as S from './styled';
 
 const Blog: React.FC = () => {
-  const [selectedPost, setSelectedPost] = useState<BlogPostType | null>(null);
+  const [selectedPost, setSelectedPost] = useState<BlogPostType | null>(
+    posts[0]
+  );
 
   return (
     <>
       <Header />
-      <div style={{ display: 'flex' }}>
-        <aside style={{ width: '15%', padding: '20px' }}>
+      <S.WrapperBlog style={{ display: 'flex' }}>
+        <aside style={{ width: '15%', padding: '20px', color: 'transparent' }}>
           <BlogList posts={posts} onSelect={setSelectedPost} />
         </aside>
         <main style={{ width: '85%', padding: '20px' }}>
           {selectedPost ? <BlogPost post={selectedPost} /> : <Hero />}
         </main>
-      </div>
+      </S.WrapperBlog>
       <Footer />
     </>
   );
