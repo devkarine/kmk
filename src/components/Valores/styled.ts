@@ -24,15 +24,13 @@ export const HexagonWrapper = styled.div<{ alternate?: boolean }>`
 
   @media (max-width: 768px) {
     margin: 15px;
-    transform: translateY(
-      0
-    ); // Remova o translateY em telas menores para alinhar os hexágonos
+    transform: translateY(0);
   }
 
   @media (max-width: 480px) {
     width: 200px;
     height: 200px;
-    margin: 20px; // Aumenta ainda mais o espaçamento em telas pequenas
+    margin: 20px;
   }
 `;
 
@@ -48,6 +46,10 @@ export const Hexagon = styled.div<{ isFlipped: boolean }>`
   transition: transform 0.6s ease-in-out;
   transform: ${({ isFlipped }) =>
     isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'};
+
+  @media (max-width: 768px) {
+    font-size: ${({ theme }) => theme.fonts.size.text.extraSmall};
+  }
 `;
 
 export const Side = styled.div`

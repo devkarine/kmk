@@ -54,7 +54,7 @@ export const posts: BlogPost[] = [
       <h2>Conclusão</h2>
       <p>Resiliência, tanto em casa quanto na empresa, é cultivada através da prática consciente de atitudes positivas, flexibilidade, empatia, e a capacidade de aprender com as experiências. Ao aplicar essas estratégias no dia a dia, você se torna mais capaz de enfrentar e superar os desafios, fortalecendo tanto suas relações pessoais quanto seu desempenho profissional.</p>
     `,
-    date: '2024-08-16'
+    date: '16/08/2024'
   }
 
   // Adicione novas matérias conforme necessário

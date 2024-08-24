@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   gap: 20px;
   max-width: 100%;
   background-color: ${({ theme }) => theme.colors.dark};
@@ -18,12 +18,22 @@ export const Container = styled.div`
 `;
 
 export const Img = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   border-radius: 30px;
-  max-width: 600px;
+
   padding-bottom: 20px;
+  gap: 30px;
+  flex: 1;
 
   img {
-    width: 100%;
-    border-radius: 30px;
+    max-width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    -webkit-box-shadow: 6px 5px 13px 0px rgba(171, 48, 48, 0.67);
+    -moz-box-shadow: 6px 5px 13px 0px rgba(171, 48, 48, 0.67);
+    box-shadow: 6px 5px 13px 0px rgba(171, 48, 48, 0.67);
   }
 `;

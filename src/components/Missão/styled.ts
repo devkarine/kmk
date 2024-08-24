@@ -21,8 +21,8 @@ export const Container = styled.section`
   }
 
   p {
-    width: 500px;
-    height: 144px;
+    max-width: 500px;
+    height: 180px;
     font-size: ${({ theme }) => theme.fonts.size.text.large};
     text-align: center;
     @media (max-width: 768px) {
@@ -32,7 +32,7 @@ export const Container = styled.section`
   }
 `;
 
-export const WrapperFilosofia = styled.div`
+export const WrapperMissao = styled.div`
   display: flex;
 
   @media (max-width: 768px) {
@@ -40,7 +40,7 @@ export const WrapperFilosofia = styled.div`
   }
 `;
 
-export const Filosofia = styled.div`
+export const Missao = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
