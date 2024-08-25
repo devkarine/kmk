@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 export const Title = styled.h2`
   font-size: ${({ theme }) => theme.fonts.size.header.small};
-  padding: 50px 0;
+  padding: 0 0 50px 0;
   text-align: center;
   background-color: ${({ theme }) => theme.colors.secondary};
 `;
@@ -48,7 +48,7 @@ export const Hexagon = styled.div<{ isFlipped: boolean }>`
     isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'};
 
   @media (max-width: 768px) {
-    font-size: ${({ theme }) => theme.fonts.size.text.extraSmall};
+    font-size: 12px;
   }
 `;
 
@@ -82,4 +82,8 @@ export const BackSide = styled(Side)`
   background-color: ${({ theme }) => theme.colors.dark};
   color: ${({ theme }) => theme.colors.light};
   transform: rotateY(180deg);
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;

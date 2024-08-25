@@ -7,14 +7,18 @@ export const Title = styled.h2`
 
 export const Container = styled.div`
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 export const ContentCrencas = styled.div`
   display: flex;
   align-items: center;
   width: 500px;
-  justify-content: space-evenly;
+  justify-content: center;
   position: absolute;
   top: 60%;
+  gap: 50px;
 `;
 export const Crencas = styled.div`
   display: flex;

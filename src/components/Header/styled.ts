@@ -21,6 +21,10 @@ export const Logo = styled.div`
   height: 60px;
   border-radius: 50%;
 
+  &:hover {
+    border: 2px solid #991b1b;
+  }
+
   a {
     font-size: ${({ theme }) => theme.fonts.size.text.large};
     color: ${({ theme }) => theme.colors.light};
@@ -33,6 +37,11 @@ export const Nav = styled.nav`
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: 540px) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
 
     li {
       a {

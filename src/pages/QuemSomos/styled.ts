@@ -32,8 +32,6 @@ export const Img = styled.div`
     max-width: 500px;
     height: 250px;
     border-radius: 20px;
-    -webkit-box-shadow: 6px 5px 13px 0px rgba(171, 48, 48, 0.67);
-    -moz-box-shadow: 6px 5px 13px 0px rgba(171, 48, 48, 0.67);
-    box-shadow: 6px 5px 13px 0px rgba(171, 48, 48, 0.67);
+    box-shadow: 2px 3px 13px -5px #ffffff;
   }
 `;
