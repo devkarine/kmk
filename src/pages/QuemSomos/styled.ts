@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -29,8 +29,8 @@ export const Img = styled.div`
   flex: 1;
 
   img {
-    max-width: 500px;
-    height: 250px;
+    max-width: 40%;
+    height: 60%;
     border-radius: 20px;
     box-shadow: 2px 3px 13px -5px #ffffff;
   }
