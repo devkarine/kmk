@@ -1,6 +1,7 @@
 export type BlogPost = {
   id: number;
   title: string;
+  author: string;
   content: string;
   date: string;
 };
@@ -9,6 +10,7 @@ export const posts: BlogPost[] = [
   {
     id: 1,
     title: 'Resiliência',
+    author: 'Karine',
     content: `
       <h2>O que é resiliência?</h2>
       <p>Resiliência é a capacidade de uma pessoa, sistema ou organização de se adaptar e se recuperar de situações adversas, estresse ou mudanças. Em termos pessoais, resiliência envolve a habilidade de lidar com desafios, superar obstáculos, aprender com as dificuldades e continuar em frente, mantendo ou até fortalecendo o bem-estar emocional e mental.</p>
@@ -54,7 +56,27 @@ export const posts: BlogPost[] = [
       <h2>Conclusão</h2>
       <p>Resiliência, tanto em casa quanto na empresa, é cultivada através da prática consciente de atitudes positivas, flexibilidade, empatia, e a capacidade de aprender com as experiências. Ao aplicar essas estratégias no dia a dia, você se torna mais capaz de enfrentar e superar os desafios, fortalecendo tanto suas relações pessoais quanto seu desempenho profissional.</p>
     `,
-    date: '16/08/2024'
+    date: '16/08/2024',
+  },
+
+  {
+    id: 2,
+    title: 'Armadura',
+    author: 'Karine',
+    content: `
+      <h2>Você já tirou sua armadura hoje?</h2>
+      
+      <p>Recentemente, a escritora Rebecca Ross, em seu livro Divinos Rivais, traz uma reflexão poderosa sobre a “armadura” que muitos carregam para se proteger das dores e dos desafios do mundo. A passagem que trata da armadura emocional ressoa especialmente com aqueles que enfrentam o dilema entre preservar-se e permitir que os outros vejam quem realmente são.</p>
+
+      <p>“Todos nós usamos armadura”, afirma um dos personagens, numa troca de cartas com o outro. O trecho segue com uma observação: “Aqueles que não o fazem são tolos [...] mas se aprendi alguma coisa com esses idiotas é que ser vulnerável é uma força que muitos de nós tememos. É preciso coragem para baixar a armadura.” Esse conceito sugere que a verdadeira força está em permitir que o mundo veja nossas fragilidades, o que demanda coragem e disposição.</p>
+
+      <p>Para muitas pessoas, baixar essa “armadura” envolve o reconhecimento de partes de si que foram ocultadas ou abandonadas. Na sociedade atual, que frequentemente valoriza a produtividade e a eficiência, mostrar-se vulnerável pode ser visto como uma fraqueza, o que reforça a tendência de manter essas defesas emocionais. No entanto, segundo especialistas em psicologia e desenvolvimento pessoal, a vulnerabilidade não apenas fortalece os relacionamentos, mas também promove um crescimento autêntico, pessoal e profissional.</p>
+
+      <p>O desafio é refletir sobre quais aspectos dessa “armadura” estão limitando o desenvolvimento individual e o alcance de potencialidades no ambiente de trabalho. Para muitos, isso pode significar a necessidade de reencontrar habilidades adormecidas, retomar paixões deixadas de lado ou aprimorar aspectos pessoais que possam beneficiar a carreira.</p>
+
+      <p>Assim, a questão persiste: até que ponto é possível deixar de lado essas armaduras e assumir riscos emocionais que levam ao crescimento? Em uma cultura que frequentemente vê a vulnerabilidade com desconfiança, talvez ser "tolo" o suficiente para deixar as barreiras baixarem seja, paradoxalmente, o maior ato de coragem.</p>
+    `,
+    date: '28/10/2024'
   }
 
   // Adicione novas matérias conforme necessário

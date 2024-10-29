@@ -24,7 +24,12 @@ export const WrapperBlog = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+ 
 `;
+
+
+
+export const Aside = styled.div`
+  width: 15%;
+  padding: 20px;
+`

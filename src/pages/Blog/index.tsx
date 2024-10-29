@@ -15,11 +15,11 @@ const Blog: React.FC = () => {
   return (
     <>
       <Header />
-      <S.WrapperBlog style={{ display: 'flex' }}>
-        <aside style={{ width: '15%', padding: '20px', color: 'transparent' }}>
+      <S.WrapperBlog>
+        <S.Aside >
           <BlogList posts={posts} onSelect={setSelectedPost} />
-        </aside>
-        <main style={{ width: '85%', padding: '20px' }}>
+        </S.Aside>
+        <main style={{ width: '80%', padding: '20px' }}>
           {selectedPost ? <BlogPost post={selectedPost} /> : <Hero />}
         </main>
       </S.WrapperBlog>

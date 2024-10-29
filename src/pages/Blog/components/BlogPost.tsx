@@ -14,6 +14,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
       <p>
         <time>{post.date}</time>
       </p>
+      <small>Por {post.author}</small>
       <S.PostsStyles dangerouslySetInnerHTML={{ __html: post.content }} />
     </div>
   );

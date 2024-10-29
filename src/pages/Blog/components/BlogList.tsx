@@ -15,7 +15,7 @@ const BlogList: React.FC<BlogListProps> = ({ posts, onSelect }) => {
       <ul>
         {posts.map(post => (
           <li
-            style={{ cursor: 'pointer', color: 'transparent' }}
+            style={{ cursor: 'pointer' }}
             key={post.id}
             onClick={() => onSelect(post)}
           >
