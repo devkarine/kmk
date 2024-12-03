@@ -34,6 +34,9 @@ export const QuemSomos = () => {
           <img src="/assets/time5.jpg" alt="foto do time" />
           <img src="/assets/time6.jpg" alt="foto do time" />
           <img src="/assets/time9.jpg" alt="foto do time" />
+          <img src="/assets/time10.jpg" alt="foto do time" />
+          <img src="/assets/time11.jpg" alt="foto do time" />
+          <img src="/assets/time12.jpg" alt="foto do time" />
         </S.Img>
       </S.Container>
       <Footer />
